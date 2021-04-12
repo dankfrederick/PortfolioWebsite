@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Projects from './Projects';
+import ProjectTabs from './ProjectTabs/ProjectTabs';
 
 export class Home extends Component {
   static displayName = Home.name;
@@ -29,7 +29,7 @@ export class Home extends Component {
                 </div>
             </div>
 
-            <Projects />
+            <ProjectTabs />
       </div>
     );
   }
