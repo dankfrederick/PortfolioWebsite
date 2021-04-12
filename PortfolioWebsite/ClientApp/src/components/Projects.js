@@ -1,54 +1,34 @@
 ﻿import React, { Component } from 'react';
 import { Tabs, Tab, Grid, Cell } from 'react-mdl';
 
-export class Projects extends Component {
+export default class Projects extends Component {
     constructor(props) {
         super(props);
         this.state = { activeTab: 0 };
+        this.state = { catergory: '' };
     }
 
     
     toggleCategories() {
+        let catergory = '';
         switch (this.state.activeTab) {
             default: {
-                return (
-                    <div>
-                        <h2>Completed JavaScript Projects</h2>
-
-                        <h2>Upcoming JavaScript Projects</h2>
-                    </div>
-                )
+                catergory = 'JavaScript';
             } break;
             case 1: {
-                return (
-                    <div>
-                        <h2>Completed React Projects</h2>
-
-                        <h2>Upcoming React Projects</h2>
-                    </div>
-                )
+                catergory = 'React';
             } break;
             case 2: {
-                return (
-                    <div>
-                        <h2>Completed C# Projects</h2>
-
-                        <h2>Upcoming C# Projects</h2>
-                    </div>
-                )
+                catergory = 'C#';
             } break;
             case 3: {
-                return (
-                    <div>
-                        <h2>Completed Python Projects</h2>
-
-                        <h2>Upcoming Python Projects</h2>
-                    </div>
-                )
+                catergory = 'Python;'
             }
+        }
+        // this.setState({ category: catergory });
     }
     
-}
+
 
     render() {
         return (
@@ -63,7 +43,10 @@ export class Projects extends Component {
                 <section className="projects-grid">
                     <Grid className="projects-grid">
                         <Cell col={12}>
-                            <div className="content">{this.toggleCategories()}</div>
+                            <div className="content">
+                                <h2>Completed {this.state.catergory} Projects</h2>
+                                <h2>Upcoming {this.state.catergory} Projects</h2>
+                            </div>
                         </Cell>
                     </Grid>
                 </section>
