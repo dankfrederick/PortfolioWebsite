@@ -1,0 +1,13 @@
+﻿.card {
+    border-radius: 20px;
+}
+
+.card-body {
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+}

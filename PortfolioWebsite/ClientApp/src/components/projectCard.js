@@ -1,19 +1,30 @@
 ﻿import React, { Component } from 'react';
 import Card from 'react-bootstrap/Card'
+import './ProjectCard.css';
 
+class ProjectCard extends Component {
+    render() {
+        let demo = null;
 
+        if (this.props.liveDemo != null) {
+            demo = <Card.Link href={this.props.liveDemo}>Live Demo</Card.Link>
+        }
 
-<Card style={{ width: '18rem' }}>
-    <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Card Subtitle</Card.Subtitle>
-        <Card.Text>
-            Some quick example text to build on the card title and make up the bulk of
-            the card's content.
-                            </Card.Text>
-        <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link>
-    </Card.Body>
-</Card>
+        return (
+
+            <Card style={{ width: '18rem' }}>
+                <Card.Body>
+                    <Card.Title>{this.props.title}</Card.Title>
+                    <Card.Subtitle className="mb-2 text-muted">{this.props.subtitle}</Card.Subtitle>
+                    <Card.Text>
+                        {this.props.text}
+                    </Card.Text>
+                    <Card.Link href={this.props.github}>GitHub</Card.Link>
+                    {demo}
+            </Card.Body>
+            </Card>
+        );
+    }
+};
 
 export default ProjectCard;
