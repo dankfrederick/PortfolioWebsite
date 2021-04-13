@@ -1,5 +1,6 @@
 ﻿import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import ProjectCard from '../projectCard'
 import './ProjectTabs.css';
 
 
@@ -18,10 +19,12 @@ class ProjectTabs extends Component {
                     <Tab>C#</Tab>
                     <Tab>Python</Tab>
                 </TabList>
-                <TabPanel>Completed Javascript Projects</TabPanel>
-                <TabPanel>Completed React Projects</TabPanel>
-                <TabPanel>Completed C# Projects</TabPanel>
-                <TabPanel>Completed Python Projects</TabPanel>
+                <TabPanel><h2>Completed Javascript Projects</h2>
+
+                </TabPanel>
+                <TabPanel><h2>Completed React Projects</h2></TabPanel>
+                <TabPanel><h2>Completed C# Projects</h2></TabPanel>
+                <TabPanel><h2>Completed Python Projects</h2></TabPanel>
             </Tabs>
         );
     }
