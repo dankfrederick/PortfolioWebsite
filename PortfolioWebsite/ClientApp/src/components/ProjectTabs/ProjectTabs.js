@@ -38,7 +38,13 @@ class ProjectTabs extends Component {
                             subtitle='React and JavaScript'
                             text='Demonstration of dynamic design, JavaScript, and mobile compatibility'
                             github='https://github.com/dankfrederick/PortfolioWebsite'
-                            liveDemo='https://www.danfrederick.me/' />
+                        liveDemo='https://www.danfrederick.me/' />
+                    <h2>Upcoming React Projects</h2>
+                    <ProjectCard title='Property Analyzer'
+                        subtitle='React and JavaScript'
+                        text='Demonstration of React dynamic design and data scrapping'
+                        github='#'
+                        liveDemo='#' />
                 </TabPanel>
 
                 <TabPanel>

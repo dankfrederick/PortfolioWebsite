@@ -7,7 +7,7 @@ class ProjectCard extends Component {
         let demo = null;
 
         if (this.props.liveDemo != null) {
-            demo = <Card.Link href={this.props.liveDemo}>Live Demo</Card.Link>
+            demo = <Card.Link href={this.props.liveDemo} target='_blank'>Live Demo</Card.Link>
         }
 
         return (
@@ -19,7 +19,7 @@ class ProjectCard extends Component {
                     <Card.Text>
                         {this.props.text}
                     </Card.Text>
-                    <Card.Link href={this.props.github}>GitHub</Card.Link>
+                    <Card.Link href={this.props.github} target='_blank'>GitHub</Card.Link>
                     {demo}
             </Card.Body>
             </Card>

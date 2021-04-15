@@ -9,6 +9,7 @@ html {
 body {
     background-image: linear-gradient(to bottom left, #000000, #434343);
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 img {
