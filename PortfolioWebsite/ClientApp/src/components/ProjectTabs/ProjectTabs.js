@@ -52,7 +52,7 @@ class ProjectTabs extends Component {
                     <br />
                     <h2>Upcoming C# Projects</h2>
                     <ProjectCard title='Class Feedback'
-                        subtitle='Xamarin and C#'
+                        subtitle='MVC Webapp and C#'
                         text='Demonstration a cross-platform application in Xamarin'
                         github='https://github.com/dankfrederick/RT-class-feedback' />
                 </TabPanel>
