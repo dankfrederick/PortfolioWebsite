@@ -1,6 +1,6 @@
 ﻿import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import ProjectCard from '../projectCard'
+import ProjectCard from '..//ProjectCard/ProjectCard'
 import './ProjectTabs.css';
 
 
@@ -22,6 +22,7 @@ class ProjectTabs extends Component {
 
 
                 {/* Project Cards take title, subtitle, text, github, and liveDemo(optional) props */}
+                {/* TODO: Move project card data to a JSON file and read it into the website instead of being hard coded*/}
                 <TabPanel>
                     <h2>Completed Javascript Projects</h2>
                     <br />
@@ -43,8 +44,7 @@ class ProjectTabs extends Component {
                     <ProjectCard title='Property Analyzer'
                         subtitle='React and JavaScript'
                         text='Demonstration of React dynamic design and data scrapping'
-                        github='#'
-                        liveDemo='#' />
+                        github='#' />
                 </TabPanel>
 
                 <TabPanel>
@@ -52,8 +52,8 @@ class ProjectTabs extends Component {
                     <br />
                     <h2>Upcoming C# Projects</h2>
                     <ProjectCard title='Class Feedback'
-                        subtitle='MVC Webapp and C#'
-                        text='Demonstration a cross-platform application in Xamarin'
+                        subtitle='MVC Web App and C#'
+                        text='Demonstration of a MVC Web App built in C#'
                         github='https://github.com/dankfrederick/RT-class-feedback' />
                 </TabPanel>
 

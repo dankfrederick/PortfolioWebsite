@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectTabs from './ProjectTabs/ProjectTabs';
+import Footer from './Footer/Footer';
 
 export class Home extends Component {
   static displayName = Home.name;
@@ -28,8 +29,18 @@ export class Home extends Component {
                     </a>
                 </div>
             </div>
+            {/*Project Tabs and Cards for*/}
+            <div id="projects">
+                <ProjectTabs />
+            </div>
 
-            <ProjectTabs />
+            {/*Contact Form*/}
+            {/*TODO: Fix Bookmarking, not currently functional. React based issue? */}
+            <div id="contact">
+
+            </div>
+
+            <Footer />
       </div>
     );
   }
