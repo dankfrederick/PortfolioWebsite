@@ -54,7 +54,7 @@ class ProjectTabs extends Component {
                     <ProjectCard title='Class Feedback'
                         subtitle='MVC Web App and C#'
                         text='Demonstration of a MVC Web App built in C#'
-                        github='https://github.com/dankfrederick/RT-class-feedback' />
+                        github='https://github.com/dankfrederick/ClassFeedback' />
                 </TabPanel>
 
 

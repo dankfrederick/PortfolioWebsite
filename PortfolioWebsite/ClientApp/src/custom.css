@@ -45,15 +45,25 @@ h4 {
 
 }
 
+h5 {
+    text-align: center;
+    color: white;
+    padding: 1rem;
+    font-size: 28px;
+}
+
 .social-links {
     display: flex;
     justify-content: space-between;
     width: 35%;
     margin: auto;
-    color: white;
 }
 
 .social-links i {
     color: white;
     font-size: 5em;
+}
+
+.social-links i:hover {
+    color: lightgrey;
 }

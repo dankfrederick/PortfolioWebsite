@@ -33,12 +33,13 @@ export class NavMenu extends Component {
                 <NavItem>
                   <NavLink tag={Link} className="text-light" to="/">Home</NavLink>
                 </NavItem>
-                <NavItem>
+                            {/* TODO: Add show and hide for contact form, re-enable navigation */}
+                            {/*<NavItem>
                   <NavLink tag={Link} className="text-light" to="#projects">Projects</NavLink>
                 </NavItem>
                   <NavItem>
                    <NavLink tag={Link} className="text-light" to="#contact">Contact</NavLink>
-                  </NavItem>
+                  </NavItem>*/}
 
               </ul>
             </Collapse>
